@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block title %}  home {% endblock %}
+{% block body_class %} class="nav-md" {% endblock %}
+{% block body %}
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col hidden-print">
+                {% include('layouts/navbar.html.twig') %}
+            </div>
+            {#{% include('layouts/navbar.html.twig') %}#}
+            {% include('layouts/content.html.twig') %}
+            {% include('layouts/footer.html.twig') %}
+        </div>
+    </div>
+{% endblock %}
+
